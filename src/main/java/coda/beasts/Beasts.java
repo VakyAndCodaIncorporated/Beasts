@@ -1,9 +1,7 @@
 package coda.beasts;
 
 import coda.beasts.client.ClientEvents;
-import coda.beasts.init.BeastsBlocks;
-import coda.beasts.init.BeastsEntities;
-import coda.beasts.init.BeastsItems;
+import coda.beasts.init.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -33,6 +31,9 @@ public class Beasts {
         BeastsItems.ITEMS.register(bus);
         BeastsBlocks.BLOCKS.register(bus);
         BeastsEntities.ENTITIES.register(bus);
+        BeastsBiomes.BIOMES.register(bus);
+        BeastsSurfaceBuilders.SURFACE_BUILDER.register(bus);
+        BeastsFeatures.FEATURES.register(bus);
     }
 
     private void registerCommon(FMLCommonSetupEvent event) {
